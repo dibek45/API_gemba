@@ -1,0 +1,48 @@
+INSERT INTO gemba_walk(
+            areaID,
+            gemba_walk_eventoID,
+            fecha,
+            fecha_inicio,
+            fecha_compromiso,
+            fecha_implementacion,
+            delta,
+            responsableID,
+            gemba_walk_tipo_hallazgoID,
+            gemba_walk_avanceID,
+            gemba_walk_tipo_implementacionID,
+            hallazgos,
+            comentarios,
+            estatus,
+            subareaID,
+            observadorID,
+            oldID,
+            mark,
+            quien,
+            cuando,
+            fecha_cierre
+            ) values (@areaID,
+                      @gemba_walk_eventoID,
+                      @fecha,
+                      @fecha_inicio,
+                      @fecha_compromiso,
+                      @fecha_implementacion,
+                      @delta,
+                      @responsableID,
+                      @gemba_walk_tipo_hallazgoID,
+                      @gemba_walk_avanceID,
+                      @gemba_walk_tipo_implementacionID,
+                      @hallazgos,
+                      @comentarios,
+                      @estatus,
+                      @subareaID,
+                      @observadorID,
+                      @oldID,
+                      @mark,
+                      @quien,
+                      @cuando,
+                      @fecha_cierre
+                )
+DECLARE @gemba_walkID INT=IDENT_CURRENT('gemba_walk')
+ 
+INSERT INTO gemba_walk_observador (gemba_walkID,usuarioID) VALUES(@gemba_walkID,@observadorID)
+SELECT @gemba_walkID response 

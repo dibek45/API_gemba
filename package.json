@@ -1,0 +1,31 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "API REST CORPORATIVO COPAMEX",
+  "main": "index.js",
+  "dependencies": {
+    "activedirectory": "^0.7.2",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "file-system": "^2.2.2",
+    "mongoose": "^5.4.10",
+    "mssql": "^4.3.1",
+    "nodemon": "^1.18.10",
+    "npm": "^6.9.0-next.0",
+    "seriate": "^2.0.0",
+    "tedious": "^4.2.0",
+    "underscore": "^1.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "yes"
+  },
+  "author": "David Velazquez Hernandez",
+  "license": "ISC"
+}
